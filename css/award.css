@@ -1,0 +1,12 @@
+/* ============================================================
+   Award — magazine pull-quote
+   ============================================================ */
+
+.award-section { padding-top: 160px; padding-bottom: 160px; display: grid; grid-template-columns: 1fr 2fr; gap: 80px; align-items: center; }
+.award__meta { font-family: var(--mono); font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--ink-mute); margin-top: 80px; }
+.award__quote { position: relative; padding: 12px 0 12px 56px; border-left: 1px solid var(--accent); }
+.award__quote::before { content: "\201C"; position: absolute; top: -36px; left: 32px; font-family: var(--serif); font-size: 140px; line-height: 1; color: var(--accent); opacity: 0.35; }
+.award__title { font-family: var(--serif); font-weight: 500; font-style: italic; font-size: clamp(36px, 4.5vw, 60px); line-height: 1.05; letter-spacing: -0.015em; color: var(--ink); margin: 0 0 18px; }
+.award__title .year { color: var(--accent); }
+.award__loc { font-size: 16px; color: var(--ink-soft); margin: 0 0 14px; }
+.award__desc { font-family: var(--serif); font-style: italic; font-size: 18px; color: var(--ink-soft); max-width: 50ch; margin: 0; }

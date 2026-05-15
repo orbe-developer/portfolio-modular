@@ -1,0 +1,22 @@
+/* ============================================================
+   Portfolio — main stylesheet
+   Orbehin Sarmiento Barzaga
+   
+   Imports modular css files in cascade order.
+   Edit individual concerns in their own file.
+   ============================================================ */
+
+@import url("base.css");
+@import url("nav.css");
+@import url("sections.css");
+@import url("hero.css");
+@import url("about.css");
+@import url("experience.css");
+@import url("stack.css");
+@import url("award.css");
+@import url("education.css");
+@import url("project.css");
+@import url("contact.css");
+@import url("footer.css");
+@import url("reveal.css");
+@import url("responsive.css");

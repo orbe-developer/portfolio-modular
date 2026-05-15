@@ -1,0 +1,10 @@
+/* ============================================================
+   Shared section scaffolding (eyebrow, titles)
+   ============================================================ */
+
+section { padding: 0 48px; max-width: 1440px; margin: 0 auto; position: relative; }
+.eyebrow { font-family: var(--mono); font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--ink-mute); display: inline-flex; align-items: center; gap: 12px; }
+.eyebrow .num { color: var(--accent); }
+.eyebrow::before { content: ""; display: inline-block; width: 28px; height: 1px; background: var(--ink-mute); }
+.section-title { font-family: var(--serif); font-weight: 500; font-size: clamp(36px, 5vw, 64px); line-height: 1.05; letter-spacing: -0.015em; margin: 18px 0 0; }
+.section-title em { font-style: italic; color: var(--accent); }

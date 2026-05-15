@@ -1,0 +1,35 @@
+/* ============================================================
+   Navigation
+   ============================================================ */
+
+.nav { position: fixed; top: 0; left: 0; right: 0; z-index: 50; padding: 22px 48px; display: flex; align-items: center; justify-content: space-between; transition: padding .35s ease, background-color .35s ease, border-color .35s ease; border-bottom: 1px solid transparent; }
+.nav.scrolled { padding: 14px 48px; background: rgba(245, 243, 239, 0.85); border-bottom-color: var(--rule); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); }
+.nav__mark { font-family: var(--serif); font-weight: 500; font-size: 18px; display: flex; align-items: baseline; gap: 10px; }
+.nav__mark .dot { display: inline-block; width: 7px; height: 7px; background: var(--accent); border-radius: 50%; transform: translateY(-2px); }
+.nav__links { display: flex; gap: 36px; font-size: 13px; letter-spacing: 0.06em; text-transform: uppercase; font-weight: 500; color: var(--ink-soft); }
+.nav__links a { position: relative; padding: 4px 0; transition: color .25s ease; }
+.nav__links a:hover { color: var(--ink); }
+
+/* Animated underline. Used for both hover and the active section. */
+.nav__links a::after {
+  content: "";
+  position: absolute;
+  left: 0; right: 100%; bottom: 0;
+  height: 1px;
+  background: var(--accent);
+  transition: right .35s cubic-bezier(.2,.7,.2,1);
+}
+.nav__links a:hover::after { right: 0; }
+
+/* Active section — same accent underline, plus a stronger ink colour
+   and a more confident accent on the leading numeral. */
+.nav__links a.is-active { color: var(--ink); }
+.nav__links a.is-active::after { right: 0; }
+.nav__links a.is-active .nav__num { color: var(--accent); }
+
+.nav__num { font-family: var(--mono); font-size: 11px; color: var(--ink-mute); margin-right: 4px; transition: color .25s ease; }
+.nav__menu-btn { display: none; background: none; border: 0; padding: 8px; margin: -8px; cursor: pointer; color: var(--ink); }
+.nav__menu-btn span { display: block; width: 22px; height: 1.5px; background: currentColor; margin: 5px 0; transition: transform .3s ease, opacity .3s ease; }
+.nav.open .nav__menu-btn span:nth-child(1) { transform: translateY(6.5px) rotate(45deg); }
+.nav.open .nav__menu-btn span:nth-child(2) { opacity: 0; }
+.nav.open .nav__menu-btn span:nth-child(3) { transform: translateY(-6.5px) rotate(-45deg); }

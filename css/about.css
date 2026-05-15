@@ -1,0 +1,10 @@
+/* ============================================================
+   About
+   ============================================================ */
+
+.about { padding-top: 160px; padding-bottom: 160px; display: grid; grid-template-columns: 1fr 2fr; gap: 80px; align-items: start; }
+.about__col h2 { margin-top: 18px; }
+.about__body { font-family: var(--serif); font-weight: 400; font-size: clamp(22px, 2.1vw, 30px); line-height: 1.45; color: var(--ink); letter-spacing: -0.005em; max-width: 30ch; }
+.about__body p { margin: 0; }
+.about__body .lead::first-letter { font-family: var(--serif); font-size: 4.6em; font-weight: 500; float: left; line-height: 0.85; padding: 8px 14px 0 0; color: var(--accent); }
+.about__sig { margin-top: 36px; font-family: var(--mono); font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--ink-mute); }

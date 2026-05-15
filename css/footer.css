@@ -1,0 +1,5 @@
+/* ============================================================
+   Footer
+   ============================================================ */
+
+footer.foot { max-width: 1440px; margin: 96px auto 0; padding-top: 28px; border-top: 1px solid var(--rule); display: flex; justify-content: space-between; font-family: var(--mono); font-size: 11px; letter-spacing: 0.06em; color: var(--ink-mute); text-transform: uppercase; flex-wrap: wrap; gap: 12px; }
